@@ -1,12 +1,12 @@
 import DroiError from './error'
 
 export default class DroiObject {
-  private objectId: string;
-  private modifiedTime: Date;
-  private creationTime: Date;
-  private dirtyFlags: boolean;
+  protected objectId: string;
+  protected modifiedTime: Date;
+  protected creationTime: Date;
+  protected dirtyFlags: boolean;
 
-  getObjectId(): String {
+  getObjectId(): string {
     return this.objectId;
   }
   getCreationTime(): Date {
@@ -17,7 +17,7 @@ export default class DroiObject {
     return this.modifiedTime;
   }
 
-  save(): DroiError {
+  save() {
     return
   }
 }

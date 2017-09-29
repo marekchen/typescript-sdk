@@ -4,6 +4,7 @@
   "description": "DroiBaaS typescript sdk",
   "main": "./dist/node/main.js",
   "scripts": {
+    "build": "gulp browser",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -38,7 +39,11 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
+    "@types/md5": "^2.1.32",
     "fast-sha256": "^1.0.0",
+    "md5": "^2.2.1",
+    "mime": "^2.0.3",
+    "moment": "^2.18.1",
     "sha.js": "^2.4.9",
     "superagent": "^3.6.0"
   }

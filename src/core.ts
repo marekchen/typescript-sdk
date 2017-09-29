@@ -1,7 +1,12 @@
 import DroiUser from "./user";
+import DroiObject from "./object";
+import DroiFile from "./file";
 
 export default class Core {
+
   static User = DroiUser;
+  static Object = DroiObject;
+  static File = DroiFile;
 
   static _config = {
     appId: "",
